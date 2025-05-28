@@ -1,0 +1,533 @@
+{
+    "id": "1",
+    "bannerTwo": {
+      "columns": [
+        {
+          "content": {
+            "type": "image",
+            "src": "/img/banner/h2_banner_img.png",
+            "alt": ""
+          }
+        },
+        {
+          "content": {
+            "type": "text",
+            "subTitle": "Hi, I am Writwikkkkkkkkkkkkk Sati",
+            "title": "Professional Product Designer Based in USA",
+            "button": {
+              "text": "Contact Us",
+              "link": "/contact"
+            },
+           "iconList": [
+            "/img/icon/banner_icon01.svg",
+            "/img/icon/github-logo.png",
+            "/img/icon/linkedin-logo.png",
+            "/img/icon/banner_icon04.svg"
+          ]
+          }
+        }
+      ],
+      "shapes": [
+        {
+          "src": "/img/banner/h2_banner_shape01.png"
+        },
+        {
+          "src": "/img/banner/h2_banner_shape02.png"
+        },
+        {
+          "src": "/img/banner/h2_banner_shape03.png"
+        },
+        {
+          "src": "/img/banner/h2_banner_shape04.png"
+        }
+      ]
+    },
+  "brandArea": {
+    "brands": [
+      {
+      "src": "//logotyp.us/file/asana.svg",
+      "alt": "Brand 1"
+    },
+    {
+      "src": "https://iili.io/3g196Is.png",
+      "alt": "Brand 2"
+    },
+    {
+      "src": "//logotyp.us/file/clickup.svg",
+      "alt": "Brand 3"
+    },
+    {
+      "src": "//logotyp.us/file/clockify.svg",
+      "alt": "Brand 4"
+    },
+    {
+      "src": "//logotyp.us/file/monday.svg",
+      "alt": "Brand 5"
+    },
+    {
+      "src": "//logotyp.us/file/trello.svg",
+      "alt": "Brand 6"
+    },
+    {
+      "src": "//logotyp.us/file/airtable.svg",
+      "alt": "Brand 7"
+    }
+    ]
+  },
+  "aboutAreaTwo": {
+   "columns": [
+      {
+        "content": {
+          "type": "image",
+          "src": "/img/images/h2_about_img.png",
+          "alt": ""
+        }
+      },
+      {
+        "content": {
+          "type": "text",
+          "sectionTitle": {
+            "subTitle": "I'm a Webb Developer",
+            "title": "I Can Develop per Your Requirement"
+          },
+          "description": "Hello there! I'm a web designer, and I'm very passionate and dedicated to my work. With 20 years experience as a professional web developer, I have acquired the skills and knowledge necessary to make your project a success. I enjoy every step of the design process, from discussion and collaboration.",
+          "button": {
+            "link": "/contact",
+            "arrowIcon": "/img/icon/right_arrow.svg",
+            "text": "Available jobs"
+          }
+        }
+      }
+    ],
+    "shapes": [
+      {
+        "src": "/img/images/h2_about_shape01.png"
+      },
+      {
+        "src": "/img/images/h2_about_shape02.png"
+      },
+      {
+        "src": "/img/images/h2_about_shape03.png"
+      }
+    ]
+  },
+  "counterArea": {
+    "items": [
+      {
+        "amount": 3,
+        "info": [
+          "Project",
+          "Completed"
+        ]
+      },
+      {
+        "amount": 4,
+        "info": [
+          "Our Happy",
+          "Clients"
+        ]
+      },
+      {
+        "amount": 5,
+        "info": [
+          "Cup of",
+          "Coffee for Me"
+        ]
+      },
+      {
+        "amount": 6,
+        "info": [
+          "Companies Work",
+          "With Me"
+        ]
+      }
+    ]
+  },
+  "servicesAreaTwo": {
+    "sectionTitle": {
+      "subTitle": "What I Do",
+      "title": "What Service Do I Provide"
+    },
+    "items": [
+      {
+        "src": "/img/icon/services_icon01.png",
+        "url": "/services-details",
+        "title": "UI Design",
+        "desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+      },
+      {
+        "src": "/img/icon/services_icon03.png",
+        "url": "/services-details",
+        "title": "Frontend Development",
+        "desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+      },
+      {
+        "src": "/img/icon/services_icon04.png",
+        "url": "/services-details",
+        "title": "UX Research",
+        "desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+      }
+    ]
+  },
+  "projectAreaTwo": {
+    "sectionClass": "project-area-two pt-110 pb-90",
+    "containerClass": "container",
+    "sectionTitle": {
+      "subTitle": "Portfolio",
+      "title": "You Will Like These Design Made by Me",
+      "description": "These all is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.",
+      "titleClass": "section-title title-style-two white-title mb-60 text-center"
+    },
+    "filters": [
+      {
+        "filter": "*",
+        "label": "View All"
+      },
+      {
+        "filter": "cat-one",
+        "label": "App"
+      },
+      {
+        "filter": "cat-two",
+        "label": "Website"
+      },
+      {
+        "filter": "cat-three",
+        "label": "Landing Page"
+      },
+      {
+        "filter": "cat-four",
+        "label": "Branding-app"
+      },
+      {
+        "filter": "cat-five",
+        "label": "Product Design"
+      }
+    ],
+    "items": [
+      {
+        "url": "/project-details",
+        "src": "/img/project/h2_project_img01.jpg",
+        "title": "Motion Design",
+        "desc": "Lorem Ipsum is simply",
+        "className": "cat-three cat-two"
+      },
+      {
+        "url": "/project-details",
+        "src": "/img/project/h2_project_img02.jpg",
+        "title": "Motion Design",
+        "desc": "Lorem Ipsum is simply",
+        "className": "cat-four cat-five"
+      },
+      {
+        "url": "/project-details",
+        "src": "/img/project/h2_project_img03.jpg",
+        "title": "Motion Design",
+        "desc": "Lorem Ipsum is simply",
+        "className": "cat-two cat-one"
+      },
+      {
+        "url": "/project-details",
+        "src": "/img/project/h2_project_img04.jpg",
+        "title": "Motion Design",
+        "desc": "Lorem Ipsum is simply",
+        "className": "cat-four cat-five"
+      },
+      {
+        "url": "/project-details",
+        "src": "/img/project/h2_project_img05.jpg",
+        "title": "Motion Design",
+        "desc": "Lorem Ipsum is simply",
+        "className": "cat-one cat-five"
+      },
+      {
+        "url": "/project-details",
+        "src": "/img/project/h2_project_img06.jpg",
+        "title": "Motion Design",
+        "desc": "Lorem Ipsum is simply",
+        "className": "cat-two cat-five"
+      }
+    ],
+    "shapeSrc": "/img/project/h2_project_shape.png"
+  },
+  "pricingArea": {
+    "sectionClass": "pricing-area pb-90",
+    "containerClass": "container",
+    "rowClass": "row justify-content-center",
+    "title": "The Right Plan for Your Business",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing sed do eiusmod tempor incididunt labore",
+    "tabs": [
+      {
+        "id": "month",
+        "label": "Monthly",
+        "active": true
+      },
+      {
+        "id": "year",
+        "label": "Yearly",
+        "active": false
+      }
+    ],
+    "plans": {
+      "month": [
+        {
+          "icon": "/img/icon/pricing_icon01.png",
+          "title": "Professional",
+          "description": "Do more with Dokan Using Powerful Advanced feat..",
+          "price": "$49/mo",
+          "features": [
+            "WC Product Addon Integration",
+            "Vendor Review",
+            "Store Support",
+            "Seller Verification",
+            "Stripe & Msip"
+          ]
+        },
+        {
+          "icon": "/img/icon/pricing_icon02.png",
+          "title": "Business",
+          "description": "Do more with Dokan Using Powerful Advanced feat..",
+          "price": "$69/mo",
+          "features": [
+            "WC Product Addon Integration",
+            "Vendor Review",
+            "Store Support",
+            "Seller Verification",
+            "Stripe & Msip"
+          ]
+        },
+        {
+          "icon": "/img/icon/pricing_icon03.png",
+          "title": "Enterprise",
+          "description": "Do more with Dokan Using Powerful Advanced feat..",
+          "price": "$89/mo",
+          "features": [
+            "WC Product Addon Integration",
+            "Vendor Review",
+            "Store Support",
+            "Seller Verification",
+            "Stripe & Msip"
+          ]
+        }
+      ],
+      "year": [
+        {
+          "icon": "/img/icon/pricing_icon01.png",
+          "title": "Professional",
+          "description": "Do more with Dokan Using Powerful Advanced feat..",
+          "price": "$249/yr",
+          "features": [
+            "WC Product Addon Integration",
+            "Vendor Review",
+            "Store Support",
+            "Seller Verification",
+            "Stripe & Msip"
+          ]
+        },
+        {
+          "icon": "/img/icon/pricing_icon02.png",
+          "title": "Business",
+          "description": "Do more with Dokan Using Powerful Advanced feat..",
+          "price": "$329/yr",
+          "features": [
+            "WC Product Addon Integration",
+            "Vendor Review",
+            "Store Support",
+            "Seller Verification",
+            "Stripe & Msip"
+          ]
+        },
+        {
+          "icon": "/img/icon/pricing_icon03.png",
+          "title": "Enterprise",
+          "description": "Do more with Dokan Using Powerful Advanced feat..",
+          "price": "$389/yr",
+          "features": [
+            "WC Product Addon Integration",
+            "Vendor Review",
+            "Store Support",
+            "Seller Verification",
+            "Stripe & Msip"
+          ]
+        }
+      ]
+    }
+  },
+  "workArea": {
+    "workImage": "/img/images/work_img.png",
+    "sectionTitle": {
+      "subTitle": "Working Steps",
+      "title": "My Work My Stylings"
+    },
+    "workList": [
+      {
+        "src": "/img/icon/about_icon01.png",
+        "title": "Concept Creation",
+        "desc": "Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry."
+      },
+      {
+        "src": "/img/icon/about_icon02.png",
+        "title": "Sketch Drawing",
+        "desc": "Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry."
+      },
+      {
+        "src": "/img/icon/about_icon03.png",
+        "title": "Final Design",
+        "desc": "Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry."
+      }
+    ],
+    "shapeImages": [
+      "/img/images/work_shape01.png",
+      "/img/images/work_shape02.png",
+      "/img/images/work_shape03.png",
+      "/img/images/work_shape04.png",
+      "/img/images/work_shape05.png"
+    ]
+  },
+   "projectsSection":{
+    "projectsectionTitle": {
+      "subTitle": "Our Work",
+      "title": "Successfully Completed Projects"
+    },
+    "projects": [
+      {
+        "id": 1,
+        "title": "Project Alpha",
+        "description": "A cutting-edge solution for modern challenges.",
+        "image": "/img/project/project_alpha.png",
+        "link": "/projects/project-alpha"
+      },
+      {
+        "id": 2,
+        "title": "Project Beta",
+        "description": "A revolutionary project that redefines innovation.",
+        "image": "/img/project/project_beta.png",
+        "link": "/projects/project-beta"
+      },
+      {
+        "id": 3,
+        "title": "Project Gamma",
+        "description": "A creative and robust approach to complex problems.",
+        "image": "/img/project/project_gamma.png",
+        "link": "/projects/project-gamma"
+      }
+    ]
+  },
+  "testimonialArea": {
+    "sectionClass": "testimonial-area-two pt-110 pb-50",
+    "containerClass": "container",
+    "rowClass": "row justify-content-center",
+    "titleSection": {
+      "subTitle": "Testimonial",
+      "title": "What People Say About Ourselves"
+    },
+    "testimonialItems": [
+      {
+        "desc": "‘’Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the standard dummy text”",
+        "title": "Alfredo Bator",
+        "designation": "Director of Marketing",
+        "src": "/img/images/testimonial_avatar01.png"
+      },
+      {
+        "desc": "‘’Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum”",
+        "title": "Alfredo Bator",
+        "designation": "Director of Marketing",
+        "src": "/img/images/testimonial_avatar02.png"
+      },
+      {
+        "desc": "‘’Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the standard dummy text”",
+        "title": "Alfredo Bator",
+        "designation": "Director of Marketing",
+        "src": "/img/images/testimonial_avatar03.png"
+      },
+      {
+        "desc": "‘’Lorem Ipsum is simply dummy text of typesetting industry Lorem Ipsum has been the standard dummy text”",
+        "title": "Alfredo Bator",
+        "designation": "Director of Marketing",
+        "src": "/img/images/testimonial_avatar04.png"
+      },
+      {
+        "desc": "‘’Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the standard dummy text”",
+        "title": "Alfredo Bator",
+        "designation": "Director of Marketing",
+        "src": "/img/images/testimonial_avatar02.png"
+      },
+      {
+        "desc": "‘’Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum dummy text”",
+        "title": "Alfredo Bator",
+        "designation": "Director of Marketing",
+        "src": "/img/images/testimonial_avatar04.png"
+      }
+    ]
+  },
+  "blogArea": {
+    "sectionClass": "blog-area-two pt-110 pb-90",
+    "containerClass": "container",
+    "titleSection": {
+      "subTitle": "My Blog",
+      "title": "Recent blog post"
+    },
+    "blogItems": [
+      {
+        "url": "/blog-details",
+        "date": {
+          "day": 27,
+          "month": "Nov"
+        },
+        "src": "/img/blog/h2_blog_img01.jpg",
+        "tag": "Branding",
+        "title": "How To Create JavaScript Vanilla Gantt Chart: Adding",
+        "desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took"
+      },
+      {
+        "url": "/blog-details",
+        "date": {
+          "day": 27,
+          "month": "Nov"
+        },
+        "src": "/img/blog/h2_blog_img02.jpg",
+        "tag": "Designing",
+        "title": "How To Create JavaScript Vanilla Gantt Chart: Adding",
+        "desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took"
+      },
+      {
+        "url": "/blog-details",
+        "date": {
+          "day": 27,
+          "month": "Nov"
+        },
+        "src": "/img/blog/h2_blog_img03.jpg",
+        "tag": "Branding",
+        "title": "How To Create JavaScript Vanilla Gantt Chart: Adding",
+        "desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took"
+      }
+    ]
+  },
+  "contactArea": {
+    "sectionClass": "contact-area",
+    "containerClass": "container",
+    "titleSection": {
+      "subTitle": "Contact",
+      "title": "I Want to Hear from You"
+    },
+    "contactInfo": [
+      {
+        "iconSrc": "/img/icon/loction_icon02.png",
+        "title": "Address",
+        "content": "UN82 Dhanmondi Dhaka - 1207"
+      },
+      {
+        "iconSrc": "/img/icon/mail_icon02.png",
+        "title": "Email",
+        "content": "writwiksati674@gmail.com",
+        "link": "mailto:your@email.com"
+      },
+      {
+        "iconSrc": "/img/icon/phone_icon02.png",
+        "title": "Phone",
+        "content": "+12548789300",
+        "link": "tel:0123456789"
+      }
+    ]
+  }
+  }

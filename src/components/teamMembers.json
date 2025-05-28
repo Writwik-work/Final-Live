@@ -1,0 +1,51 @@
+[
+    {
+      "id": "1",
+      "url": "/portfolio/1",
+      "title": "Alena Rosser",
+      "designation": "CEO Kawasaki Inc.",
+      "src": "/img/team/inner_team01.jpg",
+      "devFile": "Devs"
+    },
+    {
+      "id": "2",
+      "url": "/portfolio/2",
+      "title": "Writwik",
+      "designation": "CTO Kawasaki Inc.",
+      "src": "/img/team/inner_team02.jpg",
+      "devFile": "Devs2"
+    },
+    {
+      "id": "3",
+      "url": "/portfolio/3",
+      "title": "Nikita",
+      "designation": "CTO Kawasaki Inc.",
+      "src": "/img/team/inner_team03.jpg"
+      
+    },
+    {
+      "id": "4",
+      "url": "/portfolio/4",
+      "title": "Nikita",
+      "designation": "CTO Kawasaki Inc.",
+      "src": "/img/team/inner_team04.jpg"
+  
+    },
+    {
+      "id": "5",
+      "url": "/portfolio/5",
+      "title": "Nikita",
+      "designation": "CTO Kawasaki Inc.",
+      "src": "/img/team/inner_team05.jpg"
+      
+    },
+    {
+      "id": "6",
+      "url": "/portfolio/6",
+      "title": "Nikita",
+      "designation": "CTO Kawasaki Inc.",
+      "src": "/img/team/inner_team06.jpg"
+      
+    }
+  ]
+  
