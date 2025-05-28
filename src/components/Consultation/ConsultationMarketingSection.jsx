@@ -8,7 +8,8 @@ const ConsultationMarketingSection = () => {
   });
 
   // Always use a relative path so both dev (via proxy) and prod hit the same origin:
-  const API_ENDPOINT = "/api/save-to-excel";
+  const API_ENDPOINT = "https://consultation-api.onrender.com/api/save-to-excel";
+
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
