@@ -1,3 +1,5 @@
+// src/components/ConsultationMarketingSection.jsx
+
 import React, { useState } from "react";
 
 const ConsultationMarketingSection = () => {
@@ -7,9 +9,8 @@ const ConsultationMarketingSection = () => {
     message: ""
   });
 
-  // Always use a relative path so both dev (via proxy) and prod hit the same origin:
-  const API_ENDPOINT = "https://consultation-api.onrender.com/api/save-to-excel";
-
+  // Base URL comes from .env.production (e.g. "https://consultation-api-gfvv.onrender.com")
+  const API_BASE = process.env.REACT_APP_API_ENDPOINT;
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -19,7 +20,7 @@ const ConsultationMarketingSection = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch(API_ENDPOINT, {
+      const response = await fetch(`${API_BASE}/api/save-to-excel`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData)
@@ -50,11 +51,15 @@ const ConsultationMarketingSection = () => {
           <ul>
             <li>
               <strong>Data-Driven Approach</strong>
-              <p>Make informed decisions with comprehensive analytics and insights.</p>
+              <p>
+                Make informed decisions with comprehensive analytics and insights.
+              </p>
             </li>
             <li>
               <strong>Targeted Campaigns</strong>
-              <p>Reach your ideal audience with precision-targeted marketing campaigns.</p>
+              <p>
+                Reach your ideal audience with precision-targeted marketing campaigns.
+              </p>
             </li>
           </ul>
         </div>

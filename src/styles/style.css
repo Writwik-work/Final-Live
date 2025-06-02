@@ -178,14 +178,14 @@ img[src="/Ingversions-staging/img/brand/brand_img07.png"] {
   width: 100%;
   max-width: 1400px;
   overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-  max-height: 100vh;    /* never taller than 90% of viewport */
-  overflow-y: auto;    /* scroll vertically when content is too tall */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  max-height: 100vh; /* never taller than 90% of viewport */
+  overflow-y: auto; /* scroll vertically when content is too tall */
 
-    /* Firefox */
-    scrollbar-width: none;  /* hide scrollbar track */
-    /* IE 10+ */
-    -ms-overflow-style: none;
+  /* Firefox */
+  scrollbar-width: none; /* hide scrollbar track */
+  /* IE 10+ */
+  -ms-overflow-style: none;
 }
 /* WebKit (Chrome, Safari, Edge) */
 .popup-container::-webkit-scrollbar {
@@ -201,15 +201,22 @@ img[src="/Ingversions-staging/img/brand/brand_img07.png"] {
 }
 
 @keyframes slideIn {
-  from { transform: translateX(-100%); }
-  to   { transform: translateX(0); }
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
 }
 
 @keyframes slideOut {
-  from { transform: translateX(0); }
-  to   { transform: translateX(-100%); }
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
 }
-
 
 /* Header */
 .popup-header {
@@ -241,7 +248,7 @@ img[src="/Ingversions-staging/img/brand/brand_img07.png"] {
 .popup-title {
   font-size: 30px;
   margin-bottom: 50px;
-  color: #fff;       /* adjust to match your theme */
+  color: #fff; /* adjust to match your theme */
   font-weight: 800;
 }
 
@@ -261,6 +268,7 @@ img[src="/Ingversions-staging/img/brand/brand_img07.png"] {
 .popup-buttons {
   display: flex;
   gap: 12px;
+  animation: hueRotate 50s linear infinite;
 }
 .btn-schedule {
   background: #f97316;
@@ -334,7 +342,7 @@ img[src="/Ingversions-staging/img/brand/brand_img07.png"] {
 .lightbox-overlay {
   position: fixed;
   inset: 0;
-  background: rgba(0,0,0,0.85);
+  background: rgba(0, 0, 0, 0.85);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -347,7 +355,7 @@ img[src="/Ingversions-staging/img/brand/brand_img07.png"] {
   max-height: 90%;
   object-fit: contain;
   border-radius: 4px;
-  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
 /* Close button styling */
@@ -581,6 +589,7 @@ label {
 
   /* Transition for hover/focus effects */
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  animation: hueRotate 50s linear infinite;
 }
 
 /* (Optional) Hover or active state to enhance the gradient effect */
@@ -749,6 +758,7 @@ label {
   padding: 19px 33px;
   font-weight: 500;
   background: var(--tg-primary-color);
+  animation: hueRotate 50s linear infinite;
 }
 .header-action .header-btn .btn span {
   background: var(--tg-secondary-color);
@@ -818,8 +828,8 @@ label {
   width: 100%;
   z-index: 1;
   background: var(--tg-white);
-  -webkit-animation: 1000ms ease-in-out 0s normal none 1 running fadeInDown;
-  animation: 1000ms ease-in-out 0s normal none 1 running fadeInDown;
+  /* -webkit-animation: 1000ms ease-in-out 0s normal none 1 running fadeInDown;
+  animation: 1000ms ease-in-out 0s normal none 1 running fadeInDown; */
   -webkit-box-shadow: 0 10px 15px rgba(25, 25, 25, 0.1);
   box-shadow: 0 10px 15px rgba(25, 25, 25, 0.1);
   border-radius: 0;
@@ -3375,7 +3385,11 @@ html {
   height: 140px;
   max-width: 82%;
 }
-
+img[alt="Brand 2"] {
+  width: 196px;
+  height: 105px;
+  margin-top: 10px;
+}
 /* brand-two */
 .brand-area .title {
   text-align: center;
@@ -3434,10 +3448,13 @@ html {
   margin-left: 60px;
 }
 .team-content p {
-  color: var(--tg-black-coral);
   opacity: 0.7;
   margin-bottom: 60px;
   width: 75%;
+  font-size: 16px;
+  line-height: 1.6;
+  font-weight: 300;
+  color: #333;
 }
 .team-img-wrap {
   position: relative;
@@ -3942,7 +3959,7 @@ html {
   border-radius: 150px 0 0 0;
   overflow: hidden;
   position: relative;
-  z-index: 1;
+  /* z-index: 1; */
 }
 .section-title.white-title .title {
   color: var(--tg-white);
@@ -3999,6 +4016,7 @@ html {
   display: flex;
   align-items: center;
   margin-left: 100px;
+  animation: hueRotate 50s linear infinite;
 }
 .project-nav .swiper-button-prev,
 .project-nav .swiper-button-next {
@@ -4628,7 +4646,7 @@ html {
 }
 .testimonial-item-wrap .row [class*="col-"]:nth-child(even) .testimonial-item,
 .testimonial-item-wrap-item-even {
-  margin-top: 40px;
+  margin-top: 0px;
 }
 .testimonial-active [class*="col-"] {
   padding: 0 10px;
@@ -5187,7 +5205,11 @@ html {
 .marketing-left h2 {
   margin-bottom: 1rem;
   font-size: 1.8rem;
-  background: radial-gradient(99.34% 118.33% at 47.79% 5%, #3f20fb 0%, #b377ff 100%);
+  background: radial-gradient(
+    99.34% 118.33% at 47.79% 5%,
+    #3f20fb 0%,
+    #b377ff 100%
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text; /* For other browsers that support it */
@@ -5222,7 +5244,11 @@ html {
 /* Right side content with purple gradient */
 .marketing-right {
   flex: 1 1 50%;
-  background: radial-gradient(99.34% 118.33% at 47.79% 5%, #3f20fb 0%, #b377ff 100%);
+  background: radial-gradient(
+    99.34% 118.33% at 47.79% 5%,
+    #3f20fb 0%,
+    #b377ff 100%
+  );
   display: flex;
   align-items: center;
   justify-content: center;
@@ -5239,9 +5265,9 @@ html {
 }
 
 .consultation-box h3 {
-  font-size: 1.5rem;  /* text-2xl */
-  line-height: 2rem;  /* matching default line-height for text-2xl */
-  font-weight: bold;  /* font-bold */
+  font-size: 1.5rem; /* text-2xl */
+  line-height: 2rem; /* matching default line-height for text-2xl */
+  font-weight: bold; /* font-bold */
   margin-bottom: 0.5rem;
   color: white;
 }
@@ -5265,7 +5291,7 @@ html {
 /* Lighten the background for inputs */
 .consultation-form input::placeholder,
 .consultation-form textarea::placeholder {
-  color: #999;
+  color: #dccbcb;
 }
 
 /* Button styling */
@@ -5275,16 +5301,17 @@ html {
   border-radius: 6px;
   font-size: 1rem;
   font-weight: 600;
-  background-color: #fff;
-  color: #7b47f5;
+  /* background-color: #fff; */
+  /* color: #7b47f5; */
   cursor: pointer;
   transition: background-color 0.3s ease;
+  animation: hueRotate 50s linear infinite;
 }
 
 .consultation-form button:hover {
   background-color: #e5dbff;
 }
-.consultation-form label{
+.consultation-form label {
   color: white;
 }
 .custom-input {
@@ -5307,11 +5334,11 @@ html {
   box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.5); /* focus:ring-2 focus:ring-white/50 */
 }
 .custom-divider {
-  width: 5rem;            /* Tailwind w-20 (usually 5rem) */
-  height: 0.25rem;        /* h-1 */
+  width: 5rem; /* Tailwind w-20 (usually 5rem) */
+  height: 0.25rem; /* h-1 */
   background-color: #fff; /* bg-white */
   border-radius: 0.25rem; /* rounded (default rounding) */
-  margin-bottom: 1.5rem;  /* mb-6 */
+  margin-bottom: 1.5rem; /* mb-6 */
 }
 
 /* Trusted section at the bottom */
@@ -5356,7 +5383,7 @@ html {
   padding: 20px;
 }
 .faq-title {
-  font-size: 48px;
+  font-size: 40px;
   font-weight: bold;
   text-align: left;
   margin-bottom: 50px;
@@ -5380,7 +5407,7 @@ html {
   color: #1e1e1e;
   justify-content: space-between;
   align-items: center;
-  font-size: 1.6rem;
+  font-size: 23px;
   line-height: 2.6rem;
   /* font-weight: bold; */
 }
@@ -5398,6 +5425,7 @@ html {
   background-color: #fafafa;
   font-size: 16px;
   color: #333;
+  opacity: 0.7;
 }
 
 /*=============================
@@ -5626,7 +5654,7 @@ html {
 /* Swiper slider custom styling */
 .work-swiper {
   width: 100%;
-  height: 300px;  /* Adjust height according to your design */
+  height: 300px; /* Adjust height according to your design */
   overflow: hidden; /* This helps constrain the slides within the container */
 }
 
@@ -7180,7 +7208,6 @@ img[src="/Ingversions-staging/img/logo/portfolio-logo.png"] {
   z-index: 1;
 }
 
-
 /* This is the moving container that holds all logos */
 .marquee__group {
   display: inline-flex; /* Place images side by side */
@@ -7214,8 +7241,9 @@ img[src="/Ingversions-staging/img/logo/portfolio-logo.png"] {
 .marquee__group img {
   display: inline-block;
   margin-right: 2rem; /* spacing between logos */
-  height: 40px; /* example logo height, adjust as needed */
-  /* you can set width: auto; or a fixed width if needed */
+  height: 45px; /* example logo height, adjust as needed */
+  width: 100px;
+  max-width: 100%;
 }
 .marquee__group-two img {
   display: inline-block;
@@ -7319,4 +7347,11 @@ img[src="/Ingversions-staging/img/logo/portfolio-logo.png"] {
   font-weight: 700;
   margin-bottom: 1rem;
   text-align: center;
+}
+p {
+  font-size: 16px;
+  line-height: 1.6;
+  font-weight: 300;
+  color: #333;
+  opacity: 0.7;
 }

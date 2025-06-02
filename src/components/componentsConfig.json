@@ -228,68 +228,82 @@
     ]
   },
   "brandAreaFour": {
-  "sectionClass": "brand-area",
-  "containerClass": "container",
-  "rowClass": "row brand-active",
-  "slickSettings": {
-    "dots": false,
-    "infinite": true,
-    "speed": 1000,
-    "autoplay": true,
-    "arrows": false,
-    "slidesToShow": 4,
-    "slidesToScroll": 2,
-    "responsive": [
+    "sectionClass": "brand-area",
+    "containerClass": "container",
+    "rowClass": "row brand-active",
+    "slickSettings": {
+      "dots": false,
+      "infinite": true,
+      "speed": 1000,
+      "autoplay": true,
+      "arrows": false,
+      "slidesToShow": 4,
+      "slidesToScroll": 2,
+      "responsive": [
+        {
+          "breakpoint": 1200,
+          "settings": {
+            "slidesToShow": 5,
+            "slidesToScroll": 1,
+            "infinite": true
+          }
+        },
+        {
+          "breakpoint": 992,
+          "settings": {
+            "slidesToShow": 4,
+            "slidesToScroll": 1
+          }
+        },
+        {
+          "breakpoint": 767,
+          "settings": {
+            "slidesToShow": 2,
+            "slidesToScroll": 1,
+            "arrows": false
+          }
+        },
+        {
+          "breakpoint": 575,
+          "settings": {
+            "slidesToShow": 2,
+            "slidesToScroll": 1,
+            "arrows": false
+          }
+        }
+      ]
+    },
+    "brands": [
       {
-        "breakpoint": 1200,
-        "settings": { "slidesToShow": 5, "slidesToScroll": 1, "infinite": true }
+        "src": "//logotyp.us/file/asana.svg",
+        "alt": "Brand 1"
       },
       {
-        "breakpoint": 992,
-        "settings": { "slidesToShow": 4, "slidesToScroll": 1 }
+        "src": "https://iili.io/3g196Is.png",
+        "alt": "Brand 2"
       },
       {
-        "breakpoint": 767,
-        "settings": { "slidesToShow": 2, "slidesToScroll": 1, "arrows": false }
+        "src": "//logotyp.us/file/clickup.svg",
+        "alt": "Brand 3"
       },
       {
-        "breakpoint": 575,
-        "settings": { "slidesToShow": 2, "slidesToScroll": 1, "arrows": false }
+        "src": "//logotyp.us/file/clockify.svg",
+        "alt": "Brand 4"
+      },
+      {
+        "src": "//logotyp.us/file/monday.svg",
+        "alt": "Brand 5"
+      },
+      {
+        "src": "//logotyp.us/file/trello.svg",
+        "alt": "Brand 6"
+      },
+      {
+        "src": "//logotyp.us/file/airtable.svg",
+        "alt": "Brand 7"
       }
     ]
   },
-  "brands": [
-    {
-      "src": "//logotyp.us/file/asana.svg",
-      "alt": "Brand 1"
-    },
-    {
-      "src": "https://iili.io/3g196Is.png",
-      "alt": "Brand 2"
-    },
-    {
-      "src": "//logotyp.us/file/clickup.svg",
-      "alt": "Brand 3"
-    },
-    {
-      "src": "//logotyp.us/file/clockify.svg",
-      "alt": "Brand 4"
-    },
-    {
-      "src": "//logotyp.us/file/monday.svg",
-      "alt": "Brand 5"
-    },
-    {
-      "src": "//logotyp.us/file/trello.svg",
-      "alt": "Brand 6"
-    },
-    {
-      "src": "//logotyp.us/file/airtable.svg",
-      "alt": "Brand 7"
-    }
-  ]
-},
-
   "servicesArea": {
     "servicesList": [
       {
@@ -401,8 +415,6 @@
         }
       ]
     },
-    
-  
     "rightColumn": {
       "colClass": "col-lg-6",
       "contentClass": "team-content",
@@ -485,70 +497,70 @@
         }
       },
       "projectItems": [
-  {
-    "imageSrc": "/img/project/Project a-b 1-1_converted.webp",
-    "popupImageSrc": "/img/project/Project a-b 1_converted.webp",
-    "link": "/project-details",
-    "popupContent": {
-      "title": "Before & After: Olivia Pearl Visuals",
-      "hypothesis": "Displaying product images and best-seller highlights directly in the main menu lets users access popular items at a glance, simplifying navigation and reducing clicks. Visual subcategories help shoppers quickly drill down to specific jewelry types. This image-driven approach can boost engagement, encourage exploration, and ultimately drive higher conversion rates while retaining a clean, modern aesthetic."
-    }
-  },
-  {
-    "imageSrc": "/img/project/Project a-b 2-1_converted.webp",
-    "popupImageSrc": "/img/project/Project a-b 2_converted.webp",
-    "link": "/project-details",
-    "popupContent": {
-      "title": "Before & After: Sonno Visuals",
-      "hypothesis": "Simplifying the product page by grouping variations clearly, enhancing the “Add to Basket” button, and highlighting delivery details reduces friction and builds trust. Customers can select options quickly and feel reassured by upfront shipping information. These improvements guide shoppers smoothly toward purchase and can increase conversion rates."
-    }
-  },
-  {
-    "imageSrc": "/img/project/Project a-b 3-1_converted.webp",
-    "popupImageSrc": "/img/project/Project a-b 3_converted.webp",
-    "link": "/project-details",
-    "popupContent": {
-      "title": "Before & After: Manto Visuals",
-      "hypothesis": "Embedding “Complete The Look” recommendations in the cart provides relevant add‑ons at checkout, encouraging complementary purchases. Clear product details, easy note‑taking, and streamlined pricing build confidence and convenience. This cohesive cart experience can boost average order value and speed up the overall checkout flow."
-    }
-  },
-  {
-    "imageSrc": "/img/project/Project a-b 4-1_converted.webp",
-    "popupImageSrc": "/img/project/Project a-b 4_converted.webp",
-    "link": "/project-details",
-    "popupContent": {
-      "title": "Before & After: Rapid Radios Visuals",
-      "hypothesis": "Highlighting discounts, star ratings, and financing options prominently creates urgency and trust. Benefit icons and high‑resolution imagery reinforce value, while improved search and navigation help customers find products faster. This transparent, engaging page layout can increase purchase likelihood and enhance overall user satisfaction."
-    }
-  },
-  {
-    "imageSrc": "/img/project/Project a-b 5-1_converted.webp",
-    "popupImageSrc": "/img/project/Project a-b 5_converted.webp",
-    "link": "/project-details",
-    "popupContent": {
-      "title": "Before & After: Bijou Build Visuals",
-      "hypothesis": "Featuring awards, star ratings, and concise benefit highlights alongside bold calls‑to‑action drives credibility and engagement. A clear headline communicates unique selling points, and pre‑order messaging manages expectations. This focused hero section captures attention and guides users confidently toward conversion."
-    }
-  },
-  {
-    "imageSrc": "/img/project/Project a-b 6-1_converted.webp",
-    "popupImageSrc": "/img/project/Project a-b 6_converted.webp",
-    "link": "/project-details",
-    "popupContent": {
-      "title": "Before & After: Ruff Greens Visuals",
-      "hypothesis": "Promoting a free trial offer with transparent pricing removes barriers to entry. Distinct pet‑specific options and clear membership versus one‑time trial details give users choice. Combined with simple benefit icons and a streamlined layout, this approach encourages sign‑ups and boosts early engagement."
-    }
-  },
-  {
-    "imageSrc": "/img/project/Project a-b 7-1_converted.webp",
-    "popupImageSrc": "/img/project/Project a-b 7_converted.webp",
-    "link": "/project-details",
-    "popupContent": {
-      "title": "Before & After: Dan Henry Visuals",
-      "hypothesis": "Organizing watch models vertically with clear year, ratings, and brief descriptions enables quick comparison. Multiple angles provide visual context, while consistent branding and streamlined navigation enhance browsing. This concise layout helps enthusiasts find their ideal timepiece faster and can improve conversion by reducing decision fatigue."
-    }
-  }
-]
+        {
+          "imageSrc": "/img/project/Project a-b 1-1_converted.webp",
+          "popupImageSrc": "/img/project/Project a-b 1_converted.webp",
+          "link": "/project-details",
+          "popupContent": {
+            "title": "Before & After: Olivia Pearl Visuals",
+            "hypothesis": "Displaying product images and best-seller highlights directly in the main menu lets users access popular items at a glance, simplifying navigation and reducing clicks. Visual subcategories help shoppers quickly drill down to specific jewelry types. This image-driven approach can boost engagement, encourage exploration, and ultimately drive higher conversion rates while retaining a clean, modern aesthetic."
+          }
+        },
+        {
+          "imageSrc": "/img/project/Project a-b 2-1_converted.webp",
+          "popupImageSrc": "/img/project/Project a-b 2_converted.webp",
+          "link": "/project-details",
+          "popupContent": {
+            "title": "Before & After: Sonno Visuals",
+            "hypothesis": "Simplifying the product page by grouping variations clearly, enhancing the “Add to Basket” button, and highlighting delivery details reduces friction and builds trust. Customers can select options quickly and feel reassured by upfront shipping information. These improvements guide shoppers smoothly toward purchase and can increase conversion rates."
+          }
+        },
+        {
+          "imageSrc": "/img/project/Project a-b 3-1_converted.webp",
+          "popupImageSrc": "/img/project/Project a-b 3_converted.webp",
+          "link": "/project-details",
+          "popupContent": {
+            "title": "Before & After: Manto Visuals",
+            "hypothesis": "Embedding “Complete The Look” recommendations in the cart provides relevant add‑ons at checkout, encouraging complementary purchases. Clear product details, easy note‑taking, and streamlined pricing build confidence and convenience. This cohesive cart experience can boost average order value and speed up the overall checkout flow."
+          }
+        },
+        {
+          "imageSrc": "/img/project/Project a-b 4-1_converted.webp",
+          "popupImageSrc": "/img/project/Project a-b 4_converted.webp",
+          "link": "/project-details",
+          "popupContent": {
+            "title": "Before & After: Rapid Radios Visuals",
+            "hypothesis": "Highlighting discounts, star ratings, and financing options prominently creates urgency and trust. Benefit icons and high‑resolution imagery reinforce value, while improved search and navigation help customers find products faster. This transparent, engaging page layout can increase purchase likelihood and enhance overall user satisfaction."
+          }
+        },
+        {
+          "imageSrc": "/img/project/Project a-b 5-1_converted.webp",
+          "popupImageSrc": "/img/project/Project a-b 5_converted.webp",
+          "link": "/project-details",
+          "popupContent": {
+            "title": "Before & After: Bijou Build Visuals",
+            "hypothesis": "Featuring awards, star ratings, and concise benefit highlights alongside bold calls‑to‑action drives credibility and engagement. A clear headline communicates unique selling points, and pre‑order messaging manages expectations. This focused hero section captures attention and guides users confidently toward conversion."
+          }
+        },
+        {
+          "imageSrc": "/img/project/Project a-b 6-1_converted.webp",
+          "popupImageSrc": "/img/project/Project a-b 6_converted.webp",
+          "link": "/project-details",
+          "popupContent": {
+            "title": "Before & After: Ruff Greens Visuals",
+            "hypothesis": "Promoting a free trial offer with transparent pricing removes barriers to entry. Distinct pet‑specific options and clear membership versus one‑time trial details give users choice. Combined with simple benefit icons and a streamlined layout, this approach encourages sign‑ups and boosts early engagement."
+          }
+        },
+        {
+          "imageSrc": "/img/project/Project a-b 7-1_converted.webp",
+          "popupImageSrc": "/img/project/Project a-b 7_converted.webp",
+          "link": "/project-details",
+          "popupContent": {
+            "title": "Before & After: Dan Henry Visuals",
+            "hypothesis": "Organizing watch models vertically with clear year, ratings, and brief descriptions enables quick comparison. Multiple angles provide visual context, while consistent branding and streamlined navigation enhance browsing. This concise layout helps enthusiasts find their ideal timepiece faster and can improve conversion by reducing decision fatigue."
+          }
+        }
+      ]
     },
     "shapeWrapClass": "project-shape-wrap",
     "shapes": [
@@ -618,55 +630,55 @@
       {
         "title": "Davis Levin",
         "designation": "CEO, Kawasaki Inc.",
-        "desc": "“Working with this team transformed our digital presence. Their attention to detail and user-centric approach delivered results beyond our expectations.”",
+        "desc": "Exceptional collaboration and innovative solutions from this group accelerated our growth trajectory and accurately produced measurable ROI exceeding all projections.",
         "src": 1
       },
       {
         "title": "Jessica White",
         "designation": "Founder, WhiteTech",
-        "desc": "“Their creativity and technical expertise are unmatched. We saw a 40% increase in engagement within weeks of launch.”",
+        "desc": "Their strategic vision and precise execution transformed our brand identity, generating increased user engagement and driving revenue growth across channels.",
         "src": 2
       },
       {
         "title": "Amir Patel",
         "designation": "Head of Product, NovaWorks",
-        "desc": "“From concept to deployment, they handled every step flawlessly. Our app’s usability metrics skyrocketed.”",
+        "desc": "Timely feedback and robust problem-solving from this team ensured our application launched flawlessly, earning praise from stakeholders and securing funding.",
         "src": 3
       },
       {
         "title": "Sofia Martinez",
         "designation": "Marketing Director, BrightWave",
-        "desc": "“A truly collaborative experience—responsive, knowledgeable, and always proactive in suggesting improvements.”",
+        "desc": "Their user-centric design expertise and meticulous attention to detail resulted in intuitive interfaces increasing retention rates and boosting customer satisfaction.",
         "src": 4
       },
       {
         "title": "Ethan Chen",
         "designation": "CTO, QuantumLeaf",
-        "desc": "“Their structured process and clear documentation made integration into our stack seamless.”",
+        "desc": "Rapid prototyping and continuous iteration by this team accelerated our go-to-market timeline, delivering a product that delighted users, stakeholders alike.",
         "src": 1
       },
       {
         "title": "Priya Singh",
         "designation": "Co-Founder, EcoVerse",
-        "desc": "“Fantastic communication and rapid iteration cycles helped us hit our deadline with a polished product.”",
+        "desc": "“Fantastic communication and rapid iteration cycles from this team empowered us to meet our deadline and deliver a polished product.”",
         "src": 2
       },
       {
         "title": "Liam O’Connor",
         "designation": "Product Manager, SkyHigh",
-        "desc": "“They really understood our vision and translated it into an intuitive, beautiful interface.”",
+        "desc": "Effective planning, clear communication and proactive risk management from this group minimized downtime and ensured seamless deployment across all environments.",
         "src": 3
       },
       {
         "title": "Hannah Becker",
         "designation": "CEO, GreenRoute",
-        "desc": "“Exceptional attention to accessibility and performance; our users keep coming back for the smooth experience.”",
+        "desc": "Their data-driven approach and performance optimization resulted in faster load times, improved SEO rankings and quick increase in organic traffic.",
         "src": 4
       },
       {
         "title": "Carlos Ruiz",
         "designation": "Lead Designer, PixelForge",
-        "desc": "“Brilliant blend of design flair and code discipline—our landing page has never looked or performed better.”",
+        "desc": "Consistent updates, thorough documentation, dedicated support from this team empowered our operations, reducing errors, boosting efficiency and strengthening client trust.",
         "src": 1
       }
     ]
@@ -821,8 +833,8 @@
             },
             {
               "icon": "/img/icon/email.png",
-              "text": "ingversionsdigital@gmail.com",
-              "link": " mailto:ingversionsdigital@gmail.com"
+              "text": "hello@ingversionsdigital.com",
+              "link": " mailto:hello@ingversionsdigital.com"
             },
             {
               "icon": "/img/icon/location.png",

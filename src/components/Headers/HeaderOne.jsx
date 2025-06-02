@@ -12,7 +12,7 @@ const HeaderOne = () => {
 =============================================*/
     $(window).on("scroll", function () {
       var scroll = $(window).scrollTop();
-      if (scroll < 245) {
+      if (scroll < 15) {
         $("#sticky-header").removeClass("sticky-menu");
         $(".scroll-to-target").removeClass("open");
       } else {
@@ -80,7 +80,7 @@ const HeaderOne = () => {
   // that has exactly what we want: "Home" and "Team Page".
   const navItems = [
     { label: "Home", link: "#" },
-    { label: "Team Page", link: "/" },
+    // { label: "Team Page", link: "/" },
   ];
   const scrollToMarketingSection = (e) => {
     e.preventDefault();

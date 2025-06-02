@@ -1,4 +1,5 @@
 // server.js
+
 const express    = require("express");
 const bodyParser = require("body-parser");
 const fs         = require("fs");
@@ -10,14 +11,14 @@ const app  = express();
 // Hostinger provides PORT via env; default to 8000 locally.
 const port = process.env.PORT || 8000;
 
-// Enable CORS for same-origin + any domain if needed
+// Enable CORS for any origin (you can lock this down to your Hostinger domain if desired)
 app.use(cors({
   origin: true,
   credentials: true
 }));
 app.use(bodyParser.json());
 
-// Path to Excel file
+// Path to Excel file (inside the same directory as server.js)
 const excelFilePath = path.join(__dirname, "data.xlsx");
 
 // 1️⃣ API: Save a submission to Excel
@@ -34,6 +35,7 @@ app.post("/api/save-to-excel", (req, res) => {
       wb = XLSX.readFile(excelFilePath);
     } else {
       wb = XLSX.utils.book_new();
+      // Create header row
       const header = [["Full Name", "Email", "Message"]];
       const ws     = XLSX.utils.aoa_to_sheet(header);
       XLSX.utils.book_append_sheet(wb, ws, "Submissions");
@@ -79,12 +81,12 @@ app.get("/api/save-to-excel", (_req, res) => {
 const buildPath = path.join(__dirname, "build");
 app.use(express.static(buildPath));
 
-// 4️⃣ Fallback to index.html for client-side routing
+// 4️⃣ Fallback to index.html for client‐side routing
 app.get(/.*/, (_req, res) => {
   res.sendFile(path.join(buildPath, "index.html"));
 });
 
-// 5️⃣ Listen on all interfaces so Hostinger can route to it
+// 5️⃣ Listen on all interfaces so Hostinger (or any host) can route to it
 app.listen(port, "0.0.0.0", () => {
   console.log(`→ Server listening on port ${port}`);
 });
