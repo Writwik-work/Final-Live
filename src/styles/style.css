@@ -268,7 +268,6 @@ img[src="/Ingversions-staging/img/brand/brand_img07.png"] {
 .popup-buttons {
   display: flex;
   gap: 12px;
-  animation: hueRotate 50s linear infinite;
 }
 .btn-schedule {
   background: #f97316;
@@ -573,7 +572,7 @@ label {
   font-size: 1.25rem; /* text-xl */
   line-height: 0.75rem;
   font-weight: 500; /* font-medium */
-  color: #fff; /* text-white */
+  color: #fff;
   text-transform: none; /* remove uppercase if you had it before */
 
   /* Rounded edges & border */
@@ -589,8 +588,7 @@ label {
 
   /* Transition for hover/focus effects */
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  animation: hueRotate 50s linear infinite;
-}
+  }
 
 /* (Optional) Hover or active state to enhance the gradient effect */
 .btn:hover {
@@ -758,7 +756,6 @@ label {
   padding: 19px 33px;
   font-weight: 500;
   background: var(--tg-primary-color);
-  animation: hueRotate 50s linear infinite;
 }
 .header-action .header-btn .btn span {
   background: var(--tg-secondary-color);
@@ -1499,8 +1496,6 @@ label {
   position: relative;
   z-index: 0;
   /* background: rgba(23,28,59,255); */
-  /* Add the hue rotate animation */
-  animation: hueRotate 50s linear infinite;
 }
 
 @keyframes hueRotate {
@@ -4016,7 +4011,6 @@ img[alt="Brand 2"] {
   display: flex;
   align-items: center;
   margin-left: 100px;
-  animation: hueRotate 50s linear infinite;
 }
 .project-nav .swiper-button-prev,
 .project-nav .swiper-button-next {
@@ -5305,7 +5299,6 @@ img[alt="Brand 2"] {
   /* color: #7b47f5; */
   cursor: pointer;
   transition: background-color 0.3s ease;
-  animation: hueRotate 50s linear infinite;
 }
 
 .consultation-form button:hover {
@@ -7354,4 +7347,12 @@ p {
   font-weight: 300;
   color: #333;
   opacity: 0.7;
+}
+.btn,
+ .project-nav,
+ .popup-buttons,
+ .consultation-form button,
+ .header-action .header-btn .btn,
+ .banner-bg {
+  animation: hueRotate 50s linear infinite;
 }
