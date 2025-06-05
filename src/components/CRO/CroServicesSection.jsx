@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 // Import Swiper React components
-import { Swiper, SwiperSlide } from "swiper/react";
+// import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
@@ -78,25 +78,17 @@ const CroServicesSection = () => {
           </div>
 
           {isMobile ? (
-            // Render Swiper for mobile without pagination
-            <Swiper
-              className="my-cro-swiper"
-              modules={[Navigation]}
-              spaceBetween={20}
-              slidesPerView={1}
-              navigation
-            >
+            // ===> MOBILE VIEW: Render a CSS grid of .cro-box items <===
+            <div className="cro-grid">
               {services.map((service, idx) => (
-                <SwiperSlide key={idx}>
-                  <div className="cro-box">
-                    <h3>{service.title}</h3>
-                    <p>{service.text}</p>
-                  </div>
-                </SwiperSlide>
+                <div className="cro-box" key={idx}>
+                  <h3>{service.title}</h3>
+                  <p>{service.text}</p>
+                </div>
               ))}
-            </Swiper>
+            </div>
           ) : (
-            // Render original 2-column layout otherwise
+            // ===> DESKTOP/TABLET VIEW: Original 2‐column layout <===
             <div className="cro-content">
               <div className="cro-row">
                 <div className="cro-box">

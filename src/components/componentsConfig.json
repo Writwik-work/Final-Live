@@ -470,7 +470,7 @@
       "swiperContainerClass": "swiper-container project-active",
       "swiperSettings": {
         "spaceBetween": 10,
-        "slidesPerView": 2.4,
+        "slidesPerView": 1.4,
         "loop": true,
         "autoplay": true,
         "breakpoints": {
@@ -630,31 +630,31 @@
       {
         "title": "Davis Levin",
         "designation": "CEO, Kawasaki Inc.",
-        "desc": "Exceptional collaboration and innovative solutions from this group accelerated our growth trajectory and accurately produced measurable ROI exceeding all projections.",
+        "desc": "Exceptional collaboration and innovative solutions from this group accelerated our growth trajectory and accurately produced measurable ROI.",
         "src": 1
       },
       {
         "title": "Jessica White",
         "designation": "Founder, WhiteTech",
-        "desc": "Their strategic vision and precise execution transformed our brand identity, generating increased user engagement and driving revenue growth across channels.",
+        "desc": "Their strategic vision and precise execution transformed our brand identity, user engagement and driving revenue growth across channels.",
         "src": 2
       },
       {
         "title": "Amir Patel",
-        "designation": "Head of Product, NovaWorks",
-        "desc": "Timely feedback and robust problem-solving from this team ensured our application launched flawlessly, earning praise from stakeholders and securing funding.",
+        "designation": "CEO, NovaWorks",
+        "desc": "Timely feedback and robust problem-solving from this team helped us in launching our app and secure funding from the stakeholders.",
         "src": 3
       },
       {
         "title": "Sofia Martinez",
-        "designation": "Marketing Director, BrightWave",
-        "desc": "Their user-centric design expertise and meticulous attention to detail resulted in intuitive interfaces increasing retention rates and boosting customer satisfaction.",
+        "designation": "AGM, BrightWave",
+        "desc": "Their user-centric design resulted in intuitive interfaces increasing retention rates and boosting customer satisfaction.",
         "src": 4
       },
       {
         "title": "Ethan Chen",
         "designation": "CTO, QuantumLeaf",
-        "desc": "Rapid prototyping and continuous iteration by this team accelerated our go-to-market timeline, delivering a product that delighted users, stakeholders alike.",
+        "desc": "continuous iteration by this team accelerated our go-to-market timeline, delivering a product that delighted users, stakeholders alike.",
         "src": 1
       },
       {
@@ -665,8 +665,8 @@
       },
       {
         "title": "Liam O’Connor",
-        "designation": "Product Manager, SkyHigh",
-        "desc": "Effective planning, clear communication and proactive risk management from this group minimized downtime and ensured seamless deployment across all environments.",
+        "designation": "CFO, SkyHigh",
+        "desc": "Effective planning and proactive risk management from this group minimized downtime and ensured seamless deployment across all environments.",
         "src": 3
       },
       {
@@ -677,8 +677,8 @@
       },
       {
         "title": "Carlos Ruiz",
-        "designation": "Lead Designer, PixelForge",
-        "desc": "Consistent updates, thorough documentation, dedicated support from this team empowered our operations, reducing errors, boosting efficiency and strengthening client trust.",
+        "designation": "COO, PixelForge",
+        "desc": "thorough documentation, dedicated support from this team empowered our operations, reducing errors, boosting efficiency and strengthening client trust.",
         "src": 1
       }
     ]

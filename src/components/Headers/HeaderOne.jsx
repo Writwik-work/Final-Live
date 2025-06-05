@@ -79,7 +79,7 @@ const HeaderOne = () => {
  // Instead of filtering for "Home" and "Pages", let's create a simplified array
   // that has exactly what we want: "Home" and "Team Page".
   const navItems = [
-    { label: "Home", link: "#" },
+    // { label: "Home", link: "#" },
     // { label: "Team Page", link: "/" },
   ];
   const scrollToMarketingSection = (e) => {

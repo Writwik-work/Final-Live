@@ -578,17 +578,14 @@ label {
   /* Rounded edges & border */
   border: none;
   border-radius: 9999px; /* fully rounded (rounded-full) */
-
-  /* Gradient background (as shown in the example) */
   background: radial-gradient(
     99.34% 118.33% at 47.79% 5%,
     #3f20fb 0%,
     #b377ff 100%
   );
-
   /* Transition for hover/focus effects */
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  }
+}
 
 /* (Optional) Hover or active state to enhance the gradient effect */
 .btn:hover {
@@ -755,7 +752,7 @@ label {
   font-size: 16px;
   padding: 19px 33px;
   font-weight: 500;
-  background: var(--tg-primary-color);
+  /* background: var(--tg-primary-color); */
 }
 .header-action .header-btn .btn span {
   background: var(--tg-secondary-color);
@@ -823,7 +820,7 @@ label {
   margin: auto;
   top: 0;
   width: 100%;
-  z-index: 1;
+  z-index: 1000;
   background: var(--tg-white);
   /* -webkit-animation: 1000ms ease-in-out 0s normal none 1 running fadeInDown;
   animation: 1000ms ease-in-out 0s normal none 1 running fadeInDown; */
@@ -1498,14 +1495,14 @@ label {
   /* background: rgba(23,28,59,255); */
 }
 
-@keyframes hueRotate {
+/* @keyframes hueRotate {
   0% {
     filter: hue-rotate(0deg);
   }
   100% {
     filter: hue-rotate(360deg);
   }
-}
+} */
 .banner-area .row {
   justify-content: center;
 }
@@ -3381,9 +3378,9 @@ html {
   max-width: 82%;
 }
 img[alt="Brand 2"] {
-  width: 196px;
-  height: 105px;
-  margin-top: 10px;
+  width: 190px;
+  height: 100px;
+  margin-top: 15px;
 }
 /* brand-two */
 .brand-area .title {
@@ -3974,6 +3971,7 @@ img[alt="Brand 2"] {
   max-width: 110%;
   margin-left: 40px;
 }
+
 .project-item {
   max-height: 579px;
   overflow: scroll;
@@ -3999,6 +3997,27 @@ img[alt="Brand 2"] {
     top: -400px; /* Adjust this value based on how far you want to scroll */
   }
 }
+
+
+
+/* 1) Create a ::before that “fades” from the section’s background color (dark) into transparent,
+      and stick it to the right edge of the container. */
+ .swiper-container.project-active::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  width: 150px;    /* adjust width to control how wide the fade is */
+  height: 68%;
+  pointer-events: none; /* so the fade doesn’t block clicks on navigation buttons */
+  z-index: 5;            /* must be above the slides but below any dot navigation/buttons if needed */
+  background: linear-gradient(
+    to left,
+    var(--tg-section-background) 0%,
+    rgba(0, 0, 0, 0.6%)           100%
+  );
+}
+
+
 .project-item img {
   width: 100%;
   border-radius: 4px;
@@ -5238,11 +5257,12 @@ img[alt="Brand 2"] {
 /* Right side content with purple gradient */
 .marketing-right {
   flex: 1 1 50%;
-  background: radial-gradient(
+  /* background: radial-gradient(
     99.34% 118.33% at 47.79% 5%,
     #3f20fb 0%,
     #b377ff 100%
-  );
+  ); */
+  background: #24222e;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -5295,8 +5315,8 @@ img[alt="Brand 2"] {
   border-radius: 6px;
   font-size: 1rem;
   font-weight: 600;
-  /* background-color: #fff; */
-  /* color: #7b47f5; */
+  background-color: #fff;
+  color: #1e1e1e;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
@@ -7027,26 +7047,34 @@ img[src="/Ingversions-staging/img/logo/portfolio-logo.png"] {
 ===============================*/
 
 /* Overall Section */
+/* ==============================
+   CRO SERVICES SECTION STYLES
+   ============================== */
+
+/* Container for the entire section */
 .cro-section {
   padding: 30px 10px;
   background-color: #fff;
   position: relative;
 }
 
-/* Two-column layout: left for the title, right for the service boxes */
+/* -----------------------------------
+   1) Shared header/content layout
+   ----------------------------------- */
+
+/* Wrapper: Title on the left, content on the right */
 .cro-header-content {
   display: flex;
-  flex-wrap: wrap; /* Ensures wrapping on smaller screens */
+  flex-wrap: wrap; /* Allows wrapping on narrower screens */
 }
 
-/* Left column: Title */
+/* Left column: “OUR CRO SERVICES” title */
 .cro-header {
   flex: 0 0 32%;
-  /* flex: 0 0 74%; */
   position: sticky;
-  top: 100px; /* Adjust this value to control how far from the top it sticks */
+  top: 100px;       /* Adjust as needed for where the title should stick */
   z-index: 0;
-  align-self: flex-start; /* If within a flex container */
+  align-self: flex-start;
 }
 
 .cro-header h2 {
@@ -7055,22 +7083,25 @@ img[src="/Ingversions-staging/img/logo/portfolio-logo.png"] {
   margin-bottom: 20px;
 }
 
-/* Right column: All services */
+/* -----------------------------------
+   2) DESKTOP/TABLET VIEW (>= 566px)
+   ----------------------------------- */
+
+/* Right column: holds the 2-column grid of .cro-box items */
 .cro-content {
   flex: 1;
 }
 
-/* Rows of services */
+/* Each horizontal row of two boxes */
 .cro-row {
   display: flex;
-  /* flex-wrap: wrap; */
   justify-content: space-between;
   margin-bottom: 40px;
 }
 
-/* Each service box (column) */
+/* Individual service box (desktop) */
 .cro-box {
-  flex: 0 0 45%; /* 2 columns per row on desktop */
+  flex: 0 0 45%; /* Two boxes per row (~45% each) */
   margin-bottom: 20px;
   position: relative;
 }
@@ -7078,7 +7109,7 @@ img[src="/Ingversions-staging/img/logo/portfolio-logo.png"] {
 .cro-box h3 {
   font-size: 35px;
   font-weight: 400;
-  color: #000; /* Adjust color as needed */
+  color: #000;
   margin-bottom: 25px;
 }
 
@@ -7088,23 +7119,84 @@ img[src="/Ingversions-staging/img/logo/portfolio-logo.png"] {
   font-weight: 300;
   color: #333;
 }
-/* Ensure the Swiper container is positioned relative so absolute positioning works */
+
+/* -----------------------------------
+   3) MOBILE GRID VIEW (<= 565px)
+   ----------------------------------- */
+
+/*
+  When isMobile === true in React, we render:
+
+    <div class="cro-grid">
+      <div class="cro-box">…</div>
+      <div class="cro-box">…</div>
+      …
+    </div>
+
+  The CSS below transforms those .cro-box items into a responsive grid.
+*/
+
+.cro-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  /* 
+    • Each column is at least 200px wide (if space allows).
+    • If the viewport can fit more, it will place multiple columns in a row.
+  */
+  gap: 20px;       /* Space between boxes (both row & column gaps) */
+  width: 100%;
+  margin-top: 20px; /* Spacing below the title/sticky header */
+}
+
+/* Override the desktop flex behavior for .cro-box inside the grid */
+.cro-grid .cro-box {
+  flex: none;          /* Cancel any flex from desktop CSS */
+  width: auto;         /* Let the grid define the width */
+  margin-bottom: 0;    /* Grid gap handles vertical spacing */
+  padding: 20px;       /* Add internal padding so each card “breathes” */
+  background: #f9f9f9; /* Light gray background for each card */
+  border-radius: 8px;  /* Subtle rounding of corners */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Soft drop-shadow */
+}
+
+.cro-grid .cro-box h3 {
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+
+.cro-grid .cro-box p {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #555;
+}
+
+/* Ensure single-column layout on extremely narrow screens (< 320px) */
+@media screen and (max-width: 320px) {
+  .cro-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* -----------------------------------
+   4) SWIPER OVERRIDES (if ever used)
+   ----------------------------------- */
+
+/* Make .my-cro-swiper a positioned container for arrows */
 .my-cro-swiper {
   position: relative;
-  padding-bottom: 75px; /* Adjust as needed */
+  padding-bottom: 75px; /* Space below slides so nav arrows can sit */
 }
 
-/* Override default positioning of navigation arrows */
+/* Override default arrow positions */
 .my-cro-swiper .swiper-button-next,
 .my-cro-swiper .swiper-button-prev {
-  position: absolute; /* Ensure absolute positioning */
-  top: auto; /* Remove default centering */
-  bottom: 10px; /* Place at the bottom */
-  z-index: 10; /* Bring arrows to the top */
-  pointer-events: auto; /* Make sure clicks register */
+  position: absolute;
+  top: auto;       /* Remove default centering */
+  bottom: 10px;    /* Place arrows 10px from the bottom */
+  z-index: 10;     /* Ensure arrows float above slide content */
+  pointer-events: auto;
 }
 
-/* Position left/right arrows */
 .my-cro-swiper .swiper-button-next {
   right: 10px;
   left: auto;
@@ -7114,6 +7206,7 @@ img[src="/Ingversions-staging/img/logo/portfolio-logo.png"] {
   left: 10px;
   right: auto;
 }
+
 
 /*=============================
 	33. Company Logos
@@ -7160,29 +7253,31 @@ img[src="/Ingversions-staging/img/logo/portfolio-logo.png"] {
   content: "";
   position: absolute;
   top: 0;
-  width: 5rem; /* Adjust width as needed */
+  /* bottom: 0; */   /* you can also use bottom: 0 instead of height: 100% */
+  width: 50px;       /* adjust fade‐width as needed */
   height: 100%;
-  z-index: 0;
-  pointer-events: none; /* Ensure these elements don't interfere with interactions */
+  z-index: 1;        /* make sure it sits above your scrolling content */
+  pointer-events: none;
 }
 .marquee-three::before,
 .marquee-three::after {
   content: "";
   position: absolute;
   top: 0;
-  width: 5rem; /* Adjust width as needed */
+  bottom: 0;
+  width: 50px; /* Adjust width as needed */
   height: 100%;
   /* z-index: 1000; */
   pointer-events: none; /* Ensure these elements don't interfere with interactions */
 }
 
-/* Left gradient fading in */
+/* LEFT fade */
 .marquee::before {
   left: 0;
   background: linear-gradient(to left, rgba(255, 255, 255, 0.6), #fff);
 }
 
-/* Right gradient fading in */
+/* RIGHT fade (this was already working) */
 .marquee::after {
   right: 0;
   background: linear-gradient(to right, rgba(255, 255, 255, 0.6), #fff);
@@ -7234,8 +7329,8 @@ img[src="/Ingversions-staging/img/logo/portfolio-logo.png"] {
 .marquee__group img {
   display: inline-block;
   margin-right: 2rem; /* spacing between logos */
-  height: 45px; /* example logo height, adjust as needed */
-  width: 100px;
+  height: 50px; /* example logo height, adjust as needed */
+  width: 110px;
   max-width: 100%;
 }
 .marquee__group-two img {
@@ -7348,11 +7443,20 @@ p {
   color: #333;
   opacity: 0.7;
 }
+/* Define the keyframes once */
+@keyframes hueRotate {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+/* Group together every selector you want to rotate in sync */
 .btn,
- .project-nav,
- .popup-buttons,
- .consultation-form button,
- .header-action .header-btn .btn,
- .banner-bg {
-  animation: hueRotate 50s linear infinite;
+.header-action .header-btn .btn,
+.banner-bg,
+.popup-buttons {
+  animation: hueRotate 60s linear infinite;
 }

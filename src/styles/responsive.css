@@ -2075,7 +2075,8 @@
     font-size: 20px;
   }
   .btn {
-    padding: 23px 38px;
+    padding: 15px 25px;
+    font-size: medium;
   }
   .breadcrumb-area.breadcrumb-area-four {
     padding: 135px 0 80px;
@@ -2313,7 +2314,7 @@
   }
   .banner-content .sub-title {
     margin-bottom: 20px;
-    font-size: 28px;
+    font-size: 27px;
   }
    /* Make the .about-content stack vertically instead of side by side */
    .about-content {
