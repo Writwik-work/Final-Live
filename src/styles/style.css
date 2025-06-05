@@ -753,10 +753,11 @@ label {
   padding: 19px 33px;
   font-weight: 500;
   /* background: var(--tg-primary-color); */
+  animation: hueRotate 50s linear infinite;
 }
-.header-action .header-btn .btn span {
+/* .header-action .header-btn .btn span {
   background: var(--tg-secondary-color);
-}
+} */
 .navbar-wrap ul li .sub-menu {
   position: absolute;
   left: 0;
@@ -1493,16 +1494,10 @@ label {
   position: relative;
   z-index: 0;
   /* background: rgba(23,28,59,255); */
+  animation: hueRotate 50s linear infinite;
 }
 
-/* @keyframes hueRotate {
-  0% {
-    filter: hue-rotate(0deg);
-  }
-  100% {
-    filter: hue-rotate(360deg);
-  }
-} */
+
 .banner-area .row {
   justify-content: center;
 }
@@ -3499,7 +3494,9 @@ img[alt="Brand 2"] {
   right: 25%;
   bottom: 21%;
 }
-
+.team-content .btn{
+  animation: hueRotate 50s linear infinite;
+}
 /* team-two */
 .team-area-two .section-title .title {
   margin-bottom: 30px;
@@ -7453,10 +7450,3 @@ p {
   }
 }
 
-/* Group together every selector you want to rotate in sync */
-.btn,
-.header-action .header-btn .btn,
-.banner-bg,
-.popup-buttons {
-  animation: hueRotate 60s linear infinite;
-}
